@@ -45,6 +45,37 @@ h6 {
   color: transparent;
 }
 
+/* Subtle halo glow for the "X" in the logo */
+.logo-x-glow {
+  color: #ffffff;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.6),
+    0 0 20px rgba(200, 220, 255, 0.35),
+    0 0 40px rgba(180, 200, 255, 0.2),
+    0 0 60px rgba(160, 190, 255, 0.1);
+  animation: x-halo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes x-halo-pulse {
+
+  0%,
+  100% {
+    text-shadow:
+      0 0 8px rgba(255, 255, 255, 0.6),
+      0 0 20px rgba(200, 220, 255, 0.35),
+      0 0 40px rgba(180, 200, 255, 0.2),
+      0 0 60px rgba(160, 190, 255, 0.1);
+  }
+
+  50% {
+    text-shadow:
+      0 0 12px rgba(255, 255, 255, 0.8),
+      0 0 28px rgba(200, 220, 255, 0.5),
+      0 0 50px rgba(180, 200, 255, 0.3),
+      0 0 80px rgba(160, 190, 255, 0.15);
+  }
+}
+
 button {
   border-radius: 4px;
   border: 1px solid transparent;

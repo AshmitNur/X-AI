@@ -100,7 +100,7 @@ function App() {
                   letterSpacing: '-0.02em',
                   textTransform: 'uppercase'
                 }}>
-                  <span className="text-outline">BUSINESS</span> <span style={{ color: '#ffffff' }}>X</span> <span className="text-outline">AI</span>
+                  <span className="text-outline">BUSINESS</span> <span className="logo-x-glow">X</span> <span className="text-outline">AI</span>
                 </h1>
 
                 <div style={{

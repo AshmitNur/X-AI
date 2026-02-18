@@ -76,7 +76,7 @@ export default function ChatRoom({ onLogout }: ChatRoomProps) {
         if (conversationStatus === 'connected') {
             await conversation.endSession();
         } else {
-            await conversation.startSession({ agentId: ELEVENLABS_AGENT_ID });
+            await conversation.startSession({ agentId: ELEVENLABS_AGENT_ID, connectionType: 'websocket' });
         }
     };
 
@@ -106,7 +106,7 @@ export default function ChatRoom({ onLogout }: ChatRoomProps) {
                         <Bot size={24} color="white" />
                     </div>
                     <div>
-                        <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 'bold' }}>BUSINESS X AI</h3>
+                        <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 'bold' }}>BUSINESS <span className="logo-x-glow">X</span> AI</h3>
                         <div style={{ fontSize: '0.8rem', color: '#00ff88', display: 'flex', alignItems: 'center', gap: '4px' }}>
                             <span style={{ width: '6px', height: '6px', background: '#00ff88', borderRadius: '50%' }}></span>
                             Motorbike Specialist
